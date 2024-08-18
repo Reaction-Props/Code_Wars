@@ -17,8 +17,19 @@
 //     return str.slice(1, -1);
 // }
 
+
+//;)
+// function removeChar(str) {
+//     return str.split("").filter((_, i) => i !== 0 && i !== str.length - 1).join("");
+// }
+
+
 function removeChar(str) {
-    return str.split("").filter((_, i) => i !== 0 && i !== str.length - 1).join("");
+    let output = '';
+    for (let i = 1; i < str.length -1; i++) {
+        output += str[i]
+    }
+    return output;
 }
 
 
